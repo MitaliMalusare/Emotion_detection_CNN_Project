@@ -12,8 +12,14 @@ This project implements an image classifier from scratch to detect emotions in f
    - Downloaded and unzipped the dataset using Kaggle's API.
    - Performed exploratory data analysis (EDA) to understand the dataset distribution.
 2. **Model Implementation:**
-   - Built a deep learning model using TensorFlow/Keras.
-   - Experimented with various CNN architectures for optimized performance.
+   - **Basic CNN:** 
+       - A model with a few convolutional and pooling layers, primarily for baseline performance comparison.
+     - **VGG-like Architecture:** 
+       - Inspired by the VGGNet model, with multiple convolutional layers followed by pooling, focusing on smaller filter sizes (3x3) and deeper networks.
+     - **Residual Networks (ResNet-like):** 
+       - Incorporated skip connections to mitigate the vanishing gradient problem and allow for better feature learning in deeper networks.
+     - **Custom CNN with Dropout and Batch Normalization:**
+       - Added dropout layers to reduce overfitting and batch normalization to speed up convergence and stabilize training.
 3. **Evaluation:**
    - Validated the model on test data.
    - Assessed performance using metrics like accuracy and confusion matrix.
@@ -31,10 +37,3 @@ This project implements an image classifier from scratch to detect emotions in f
 - Matplotlib
 - Pandas
 - NumPy
-
-### Setup
-1. Clone the repository and install dependencies:
-   ```bash
-   git clone <repository_url>
-   cd <repository_directory>
-   pip install -r requirements.txt
