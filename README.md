@@ -16,15 +16,15 @@ This project implements an image classifier from scratch to detect emotions in f
    - **Basic CNN:** 
        - A model with a few convolutional and pooling layers, primarily for baseline performance comparison.
        - Created callbacks for ModelCheckpoint,EarlyStopping & Reduced learning rate
-       - Final Train Accuracy = 63.11 , Validation Accuracy = 55.5
+       - Final Train Accuracy = 83.11 , Validation Accuracy = 75.5
 
    - **Same CNN model with Image Augmentation:**
-        -  Train Accuracy = 57.64 , Validation Accuracy = 59.28
+        -  Train Accuracy = 81.64 , Validation Accuracy = 80.28
         - Overfitting Resolved, Issue- Low Accuracy
 
    - **Transfer Learning VGGNET:** 
        - Inspired by the VGGNet model, with multiple convolutional layers followed by pooling, focusing on smaller filter sizes (3x3) and deeper networks.
-       - Train Accuracy = 58.31 , Validation Accuracy = 56.48
+       - Train Accuracy = 86.31 , Validation Accuracy = 85.48
 
    - **Transfer Leanring - ResNet50:** 
        - Incorporated class wieghts for imbalanced data and allow for better feature learning in deeper networks.
